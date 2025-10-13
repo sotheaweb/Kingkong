@@ -69,7 +69,7 @@ export default function Navbar() {
               <Link to="/services" className={linkClass("/services")}>
                 SERVICES
               </Link>
-              <FaAngleDown className="mt-1 text-white" />
+              <FaAngleDown className="text-gray-800" />
             </div>
 
             {/* Dropdown Menu */}
@@ -120,7 +120,7 @@ export default function Navbar() {
                 onClick={() => setOpenServiceMenu(!openServiceMenu)}
                 className="flex justify-between items-center w-full"
               >
-                <span>SERVICES</span>
+                <span className={linkClass("/services")}>SERVICES</span>
                 <FaAngleDown
                   className={`transform transition-transform duration-300 ${
                     openServiceMenu ? "rotate-180" : ""
