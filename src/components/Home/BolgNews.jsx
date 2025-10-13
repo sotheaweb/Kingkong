@@ -44,7 +44,7 @@ const Related = () => {
       </h1>
 
       {/* Top Section (Left + Right boxes) */}
-      <div className="flex flex-col lg:flex-row gap-10 p-4 rounded-lg">
+      <div className="flex flex-col md:flex-row gap-10 p-4 rounded-lg">
         {/* Left Box */}
         <Link
           to="/subblog/3"

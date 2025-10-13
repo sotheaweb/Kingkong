@@ -18,13 +18,13 @@ const LifeInside = () => {
       </h1>
 
       {/* Main Content Gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {/* First Image */}
         <div className="p-5 hover:shadow-sm duration-300 hover:scale-105 transition delay-70 lg:h-[55vh]">
           <img
             src={image1}
             alt="Team photo in the office"
-            className="w-full h-auto rounded-lg shadow-lg object-cover sm:h-[30vh] lg:h-[45vh]"
+            className="w-full rounded-lg shadow-lg object-cover sm:h-[30vh] lg:h-[45vh]"
             data-aos="fade-up" 
             data-aos-delay="50"
           />

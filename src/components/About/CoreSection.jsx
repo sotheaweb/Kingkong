@@ -5,41 +5,44 @@ import bgImage from '../../assets/about3.jpg';
 export default function CoreSection() {
   return (
     <div
-      className="relative w-full h-[700px] md:h-[600px] bg-cover "
+      className="relative w-full h-[70vh] sm:h-[75vh] md:h-[600px] lg:h-[70vh] xl:h-[75vh] 2xl:h-[80vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Semi-Circle Overlay */}
       <div 
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[140%] md:w-[100%] lg:w-[60%] lg:h-[68vh] aspect-[2/1] md:bg-cyan-700 opacity-75 lg:rounded-t-full flex flex-col justify-center items-center px-6"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2
+                   w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] xl:w-[70%] 2xl:w-[59%]
+                   h-[50vh] sm:h-[100vh] md:h-[40vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[73vh]
+                   bg-cyan-700/70 lg:rounded-t-full flex flex-col justify-center items-center px-4 sm:px-6 md:px-10"
         data-aos="fade-up" data-aos-delay="150"
         id="core"
       >
-        <div className="p-30 grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white relative w-full">
-          {/* Vision */}
-          <div className="px-4">
-            <h3 className="text-xl md:text-2xl font-bold mb-2">Mission</h3>
-            <p className="text-sm md:text-lg leading-relaxed text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 2xl:gap-0 text-center text-white w-full">
+          {/* Mission */}
+          <div className="px-2 sm:px-4">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Mission</h3>
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-left">
               Creating the maximum benefit and best solution for the client.
             </p>
           </div>
 
-          {/* Core */}
-          <div className="px-4 relative">
+          {/* Vision */}
+          <div className="px-2 sm:px-4 relative">
             {/* Divider lines */}
             <div className="hidden md:block absolute top-0 left-0 h-full border-l border-white/40"></div>
             <div className="hidden md:block absolute top-0 right-0 h-full border-l border-white/40"></div>
 
-            <h3 className="text-xl md:text-2xl font-bold mb-2">Vission</h3>
-            <p className="text-sm md:text-sm leading-relaxed text-left">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Vision</h3>
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-left">
               To be a Passionate, Professional, and Innovative Aviation Service Provider.
             </p>
           </div>
 
-          {/* Mission */}
-          <div className="px-4">
-            <h3 className="text-xl md:text-2xl font-bold mb-2">Core</h3>
-            <p className="text-sm md:text-sm leading-relaxed text-left">
-              Best customer centric, Professional & Experience Sales, Excellence Operation.
+          {/* Core */}
+          <div className="px-2 sm:px-4">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Core</h3>
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-left">
+              Best customer centric, Professional & Experienced Sales, Excellence Operation.
             </p>
           </div>
         </div>
