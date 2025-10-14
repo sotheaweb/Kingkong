@@ -34,7 +34,7 @@ const SubBlog = () => {
 
   return (
     <>
-      <div className="md:w-[80vw] mx-auto my-10 px-5" data-aos="fade-up" data-aos-delay="100">
+      <div className="md:w-[80vw] mx-auto  my-10 px-5" data-aos="fade-up" data-aos-delay="100">
         <div className="w-full h-96 mb-6">
           <img src={news.image} alt={news.title} className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>

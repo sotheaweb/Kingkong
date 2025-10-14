@@ -33,21 +33,33 @@ const Service = () => {
   
   const services = [
     { 
-      id: "gssa", 
-      title: "GSSA/GSA", 
-      desc: "We are highly commited to represent the airline's branding, deliver interests, drive sales and marketing strategy, provide best customer service and reservation, and execlence operations.As your GSA, we act as your exclusive commercial arm in the market. We develop and execute a strategic business plan to maximize your cargo capacity and revenue. Our dedicated team manages all local sales activities, provides a comprehensive marketing presence, and builds a robust network of freight forwarders and partners, effectively making us a direct extension of your brand and operations", 
-      img: service1
-    },
-    { 
       id: "csa", 
       title: "CSA", 
       desc: "On behalf of Cargo Sales Agent of Airline Principle, we act as your on-site quality control and logistics coordinator. Our experienced team works directly with airport and cargo terminal staff, meticulously overseeing every step of the process to prevent errors, minimize delays, and reduce the risk of damage to your shipments, and last but not least to make sure the cargo delivered succuessfully to destinations.", 
       img: service2
     },
     { 
+      id: "gssa", 
+      title: "GSSA/GSA", 
+      desc: "We are highly commited to represent the airline's branding, deliver interests, drive sales and marketing strategy, provide best customer service and reservation, and execlence operations.As your GSA, we act as your exclusive commercial arm in the market. We develop and execute a strategic business plan to maximize your cargo capacity and revenue. Our dedicated team manages all local sales activities, provides a comprehensive marketing presence, and builds a robust network of freight forwarders and partners, effectively making us a direct extension of your brand and operations", 
+      img: service1
+    },
+    { 
       id: "cargo", 
       title: "Cargo Charter", 
       desc: "Cargo charter is a highly flexible aviation solution that provides an entire aircraft for a specific shipment, bypassing the limitations of scheduled flights. It is typically used for urgent, time-sensitive, oversize, or high-value cargo that requires a dedicated flight path and a customized schedule.As a provider of this service, we act as your charter specialist, coordinating everything from aircraft sourcing to flight planning. We assess your unique requirements and find the most suitable aircraft whether it's a narrow body for a critical delivery or a wide body freighter for an industrial project to ensure your cargo arrives on time and exactly where it needs to be.", 
+      img: service3
+    },
+    { 
+      id: "lam", 
+      title: "Land Air Mode", 
+      desc: "Land-Air Service via gateway, we are commited to providing an efficient gateway for Cambodian exports.✅Faster transit times ✅Seamless coordination✅Trusted handling agentTogether, we are taking Cambodian logistics to the next level.From Phnom Penh to the World", 
+      img: service3
+    },
+    { 
+      id: "rvg", 
+      title: "Redoc Via Getway", 
+      desc: "Redoc mode is an other solutiion option to move out your cargo via gateway whenever the capacity is constrained, etc. Our team have been experienced in this mode for many years which highly confidence to ensure your cargo process from A to Z are well handling.", 
       img: service3
     },
     { 
@@ -57,7 +69,8 @@ const Service = () => {
     },
     { 
       id: "dg", 
-      title: "Dangerous Goods (DG)", 
+      title: "Dangerous Goods (DG)",
+
       desc: "Dangerous Goods (DG) are items or substances that, when transported by air, pose a risk to health, safety, property, or the environment. The transport of these goods is strictly regulated by IATA and ICAO, requiring specific procedures for classification, packaging, labeling, and documentation.As a specialist in Dangerous Goods, we act as your certified handler, managing the entire complex process on your behalf. Our trained experts ensure that your cargo, such as chemicals or batteries, is correctly identified, packed, and labeled, and that all necessary permits and documents are in place for a safe and compliant journey", 
       img: service4 
     },

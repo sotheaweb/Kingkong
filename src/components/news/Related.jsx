@@ -30,13 +30,13 @@ const Related = () => {
 
   return (
     <div
-      className="lg:max-w-7xl mx-auto mb-16 px-4 lg:px-10 mt-20 md:mt-30"
+      className="max-w-[1200px] mx-auto mb-16 mt-20 md:mt-30"
       data-aos="fade-up"
       data-aos-delay="200"
     >
       {/* Title */}
       <h1
-        className="text-3xl md:text-4xl font-bold text-cyan-600 mb-4 mx-5 lg:mx-1"
+        className="text-3xl sm:text-4xl font-bold text-cyan-600 mb-6 text-center md:text-left"
         data-aos="fade-up"
         data-aos-delay="50"
       >
@@ -44,7 +44,7 @@ const Related = () => {
       </h1>
 
       {/* Top Section (Left + Right boxes) */}
-      <div className="flex flex-col md:flex-row gap-10 p-4 rounded-lg">
+      <div className="flex flex-col md:flex-row gap-6 lg:h-[320px] md:gap-8 lg:gap-5 px-3">
         {/* Left Box */}
         <Link
           to="/subblog/3"
@@ -54,19 +54,19 @@ const Related = () => {
             discription:
               "We are a leading freight forwarding company in Cambodia, specializing in the import and export of various goods.",
           }}
-          className="flex-1"
+          className="md:w-[57%]"
         >
-          <div className="h-full md:w-[50vw] flex flex-col justify-between p-4 shadow-md hover:shadow-lg duration-300 hover:scale-105 transition delay-70 rounded-lg bg-white">
+          <div className="flex flex-col justify-between p-4 shadow-md hover:shadow-lg rounded-lg bg-white h-full duration-300 hover:scale-102 transition">
             <img
               src={news1}
               alt="News loading"
-              className="w-full h-[220px] object-cover rounded-lg"
+              className="w-full h-[220px] md:h-[250px] lg:h-[200px] object-cover rounded-lg"
             />
-            <div className="flex flex-col flex-grow justify-between mt-4">
-              <h2 className="text-xl font-semibold">Amcham Member</h2>
-              <p className="text-gray-600 text-sm lg:text-md mt-2">
+            <div className="flex flex-col flex-grow mt-4">
+              <h2 className="text-xl font-semibold">{`Amcham Member`}</h2>
+              <p className="text-gray-600 text-sm sm:text-base mt-2 truncate">
                 We are a leading freight forwarding company in Cambodia,
-                specializing in the import and export of various goods.
+                specializing in the import and export of various goods. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur maxime expedita repellat repellendus nostrum unde cum recusandae eaque ducimus doloribus.
               </p>
             </div>
           </div>
@@ -81,20 +81,20 @@ const Related = () => {
             discription:
               "We are a leading freight forwarding company in Cambodia.",
           }}
-          className="flex-1"
+          className="md:w-[42%]"
         >
-          <div className="h-full flex flex-col justify-between p-4 shadow-md hover:shadow-lg duration-300 hover:scale-105 transition delay-70 rounded-lg bg-white">
+          <div className="flex flex-col justify-between p-4 shadow-md hover:shadow-lg rounded-lg bg-white h-full duration-300 hover:scale-102 transition">
             <img
               src={news2}
               alt="News loading"
-              className="w-full h-[220px] object-cover rounded-lg"
+              className="w-full h-[220px] md:h-[200px] object-cover rounded-lg"
             />
-            <div className="flex flex-col flex-grow justify-between mt-4">
+            <div className="flex flex-col flex-grow mt-4">
               <h2 className="text-xl font-semibold">
                 Top Cargo Awards from Cathay Cargo
               </h2>
-              <p className="text-gray-600 text-sm lg:text-md mt-2">
-                We are a leading freight forwarding company in Cambodia.
+              <p className="text-gray-600 text-sm sm:text-base mt-2 truncate">
+                We are a leading freight forwarding company in Cambodia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, in.
               </p>
             </div>
           </div>
@@ -102,20 +102,18 @@ const Related = () => {
       </div>
 
       {/* Bottom Section (3 cards) */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3">
         {cardData.map((item, index) => (
           <Link key={index} to={`/subblog/${index}`} state={item}>
-            <div className="p-4 shadow-md hover:shadow-lg duration-300 hover:scale-105 transition delay-70 rounded-lg bg-white flex flex-col h-full">
+            <div className="flex flex-col h-full p-4 shadow-md hover:shadow-lg rounded-lg bg-white duration-300 hover:scale-105 transition">
               <img
                 src={item.image}
-                alt=""
-                className="w-full h-40 object-cover rounded-lg mb-4"
+                alt={item.title}
+                className="w-full h-[180px] md:h-[200px] lg:h-[200px] object-cover rounded-lg mb-4"
               />
               <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
-              <p className="text-gray-600 text-sm">
-                {item.discription.length > 50
-                  ? item.discription.slice(0, 50) + "..."
-                  : item.discription}
+              <p className="text-gray-600 text-sm sm:text-base truncate">
+                {item.discription}
               </p>
             </div>
           </Link>

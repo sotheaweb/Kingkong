@@ -10,6 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [openServiceMenu, setOpenServiceMenu] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
+  const [openSpecialMenu, setOpenSpecialMenu] = useState(false);
   const lastScrollY = useRef(window.scrollY);
   const location = useLocation();
 
@@ -73,15 +74,26 @@ export default function Navbar() {
             </div>
 
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full bg-white shadow-lg text-gray-800 rounded-md w-48 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-in-out">
-              <li><HashLink smooth to="/services#gssa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">GSSA/GSA</HashLink></li>
+            <ul className="absolute left-0 top-full bg-white shadow-lg text-gray-800 rounded-md w-60 -ml-20 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-in-out">
               <li><HashLink smooth to="/services#csa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">CSA</HashLink></li>
+              <li><HashLink smooth to="/services#gssa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">GSSA/GSA</HashLink></li>
               <li><HashLink smooth to="/services#cargo" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Cargo Charter</HashLink></li>
-              <li><HashLink smooth to="/services#special" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Special Cargo Handling</HashLink></li>
-              <li><HashLink smooth to="/services#dg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Dangerous Goods</HashLink></li>
-              <li><HashLink smooth to="/services#per" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Perishable Goods</HashLink></li>
-              <li><HashLink smooth to="/services#avi" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Live Animals</HashLink></li>
-              <li><HashLink smooth to="/services#hum" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Human Remains</HashLink></li>
+              <li><HashLink smooth to="/services#lam" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Land Air Mode</HashLink></li>
+              <li><HashLink smooth to="/services#rvg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Redoc Via Gateway</HashLink></li>
+              <li className="relative group/submenu">
+                <div className="flex items-center justify-between px-4 py-2 hover:bg-cyan-600 hover:text-white cursor-pointer">
+                  <span>Special Cargo Handling</span>
+                  <FaAngleDown className="text-gray-600 group-hover/submenu:text-white transition" />
+                </div>
+
+                {/* Submenu */}
+                <ul className="absolute left-full -top-30 bg-white shadow-lg text-gray-800 rounded-md w-60 opacity-0 translate-x-[-10px] pointer-events-none group-hover/submenu:opacity-100 group-hover/submenu:translate-x-0 group-hover/submenu:pointer-events-auto transition-all duration-300 ease-in-out">
+                  <li><HashLink smooth to="/services#dg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Dangerous Goods</HashLink></li>
+                  <li><HashLink smooth to="/services#per" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Perishable Goods</HashLink></li>
+                  <li><HashLink smooth to="/services#avi" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Live Animals</HashLink></li>
+                  <li><HashLink smooth to="/services#hum" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Human Remains</HashLink></li>
+                </ul>
+              </li>
             </ul>
           </li>
 
@@ -109,7 +121,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="lg:hidden bg-cyan-700 text-gray-100 px-3 py-6">
+        <div className="lg:hidden bg-cyan-700 text-gray-100 px-3 py-6 overflow-y-auto max-h-[80vh] overscroll-none">
           <ul className="flex flex-col space-y-4 font-semibold">
             <li><Link to="/" className={linkClass("/")} onClick={() => setOpen(false)}>HOME</Link></li>
             <li><Link to="/about" className={linkClass("/about")} onClick={() => setOpen(false)}>ABOUT US</Link></li>
@@ -132,14 +144,70 @@ export default function Navbar() {
                   openServiceMenu ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <li><HashLink smooth to="/services#gssa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">GSSA/GSA</HashLink></li>
                 <li><HashLink smooth to="/services#csa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">CSA</HashLink></li>
+                <li><HashLink smooth to="/services#gssa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">GSSA/GSA</HashLink></li>
                 <li><HashLink smooth to="/services#cargo" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Cargo Charter</HashLink></li>
-                <li><HashLink smooth to="/services#special" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Special Cargo Handling</HashLink></li>
-                <li><HashLink smooth to="/services#dg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Dangerous Goods</HashLink></li>
-                <li><HashLink smooth to="/services#per" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Perishable Goods</HashLink></li>
-                <li><HashLink smooth to="/services#avi" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Live Animals</HashLink></li>
-                <li><HashLink smooth to="/services#hum" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Human Remains</HashLink></li>
+                <li><HashLink smooth to="/services#lam" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Land Air Mode</HashLink></li>
+                <li><HashLink smooth to="/services#rvg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Redoc Via Gateway</HashLink></li>
+                <li>
+                    <button
+                      onClick={() => setOpenSpecialMenu(!openSpecialMenu)}
+                      className="flex justify-between items-center w-full px-4 py-2 hover:bg-cyan-600 hover:text-white"
+                    >
+                      <span>Special Cargo Handling</span>
+                      <FaAngleDown
+                        className={`transform transition-transform duration-300 ${
+                          openSpecialMenu ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    {/* Nested submenu */}
+                    <ul
+                      className={`transition-all duration-500 ease-in-out ${
+                        openSpecialMenu
+                          ? "max-h-[13vh] opacity-100 overflow-y-auto overscroll-y-auto touch-pan-y scrollbar-thin scrollbar-thumb-gray-400"
+                          : "max-h-0 opacity-0 overflow-hidden"
+                      }`}
+                    > 
+                      <li>
+                        <HashLink
+                          smooth
+                          to="/services#dg"
+                          className="block px-6 py-2 hover:bg-cyan-600 hover:text-white"
+                        >
+                          Dangerous Goods
+                        </HashLink>
+                      </li>
+                      <li>
+                        <HashLink
+                          smooth
+                          to="/services#per"
+                          className="block px-6 py-2 hover:bg-cyan-600 hover:text-white"
+                        >
+                          Perishable Goods
+                        </HashLink>
+                      </li>
+                      <li>
+                        <HashLink
+                          smooth
+                          to="/services#avi"
+                          className="block px-6 py-2 hover:bg-cyan-600 hover:text-white"
+                        >
+                          Live Animals
+                        </HashLink>
+                      </li>
+                      <li>
+                        <HashLink
+                          smooth
+                          to="/services#hum"
+                          className="block px-6 py-2 hover:bg-cyan-600 hover:text-white"
+                        >
+                          Human Remains
+                        </HashLink>
+                      </li>
+                    </ul>
+                </li>
               </ul>
             </li>
 

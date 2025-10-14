@@ -3,37 +3,111 @@ import amcham from '../../assets/about2.jpg'
 
 const AmchamMemmber = () => {
   return (
-    <div 
-    className='w-[90%] my-15 p-2 md:p-3 lg:w-[75%] mx-auto lg:mt-20 md:flex justify-around bg-cyan-600'
-    data-aos="fade-up" data-aos-delay="100"
-    id='amch'
+    <div
+      id="amch"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      className="
+        w-full 
+        max-w-[95%] 
+        sm:max-w-[90%] 
+        md:max-w-[1000px] 
+        lg:max-w-[1200px] 
+        xl:max-w-[1200px] 
+        mx-auto 
+        my-10 
+        sm:my-14 
+        md:my-16 
+        lg:my-20 
+        bg-cyan-600 
+        rounded-2xl 
+        p-4 
+        sm:p-6 
+        md:p-10 
+        flex 
+        flex-col 
+        md:flex-row 
+        items-center 
+        justify-between 
+        gap-8 
+        shadow-xl
+      "
     >
-      <div 
-        className='w-[100%] md:w-[50%] mb-5 rounded-lg'
-        data-aos="fade-up" data-aos-delay="150"
+      {/* Left Image */}
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className="
+          w-full 
+          md:w-[48%] 
+          rounded-xl 
+          overflow-hidden 
+          shadow-lg
+        "
       >
-        <img src={amcham} alt="loading image"  className='w-full h-[100%] rounded-lg duration-300 transition delay-70 hover:scale-90'/>
+        <img
+          src={amcham}
+          alt="AmCham Member"
+          className="
+            w-full 
+            h-[250px] 
+            sm:h-[300px] 
+            md:h-[350px] 
+            lg:h-[400px] 
+            xl:h-[450px] 
+            object-cover 
+            rounded-xl 
+            transition-transform 
+            duration-300 
+            hover:scale-105
+          "
+        />
       </div>
-      <div className='text-white space-y-5 md:h-[100%] md:w-[45%]' data-aos="fade-up" data-aos-delay="150">
-        <h1 
-          className='text-gray-800 text-2xl md:text-3xl font-bold'
+
+      {/* Right Text */}
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="
+          text-white 
+          md:w-[48%] 
+          space-y-4 
+          md:space-y-6 
+          text-center 
+          md:text-left
+        "
+      >
+        <h1
+          className="
+            text-2xl 
+            sm:text-3xl 
+            lg:text-4xl 
+            font-bold 
+            text-gray-800
+          "
         >
-          “ Amcham Member ”
+          “ AmCham Member ”
         </h1>
-        <p className='text-sm lg:text-lg text-gray-900'>
-            As the first outstanding aviation company in 
-            Cambodia under the globally conections brand 
-            from Taiwan, we brought a fresh and innovative 
-            approach to the market. Kingkong Aviation operates 
-            as an independent and specialized entity within 
-            Cambodia, with two local branches to serve our 
-            customers. Since our inception, we have been 
-            committed to providing exceptional aviation 
-            services, leveraging our strategic partnerships 
-            and the extensive global network of our parent 
-            brand. This foundation allows us to offer reliable 
-            and high-quality services, quickly earning us a 
-            reputation for excellence in the air freight industry.
+        <p
+          className="
+            text-sm 
+            sm:text-base 
+            md:text-lg 
+            leading-relaxed 
+            text-gray-900
+            text-justify
+          "
+        >
+          As the first outstanding aviation company in Cambodia under the
+          globally connected brand from Taiwan, we brought a fresh and
+          innovative approach to the market. Kingkong Aviation operates as an
+          independent and specialized entity within Cambodia, with two local
+          branches to serve our customers. Since our inception, we have been
+          committed to providing exceptional aviation services, leveraging our
+          strategic partnerships and the extensive global network of our parent
+          brand. This foundation allows us to offer reliable and high-quality
+          services, quickly earning us a reputation for excellence in the air
+          freight industry.
         </p>
       </div>
     </div>

@@ -5,19 +5,20 @@ import bgImage from '../../assets/about3.jpg';
 export default function CoreSection() {
   return (
     <div
-      className="relative w-full h-[70vh] sm:h-[75vh] md:h-[600px] lg:h-[70vh] xl:h-[75vh] 2xl:h-[80vh] bg-cover bg-center"
+      className="relative w-full h-[65vh] sm:h-[65vh] md:h-[600px] lg:h-[70vh] xl:h-[75vh] 2xl:h-[80vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Semi-Circle Overlay */}
-      <div 
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2
-                   w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] xl:w-[70%] 2xl:w-[59%]
-                   h-[50vh] sm:h-[100vh] md:h-[40vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[73vh]
-                   bg-cyan-700/70 lg:rounded-t-full flex flex-col justify-center items-center px-4 sm:px-6 md:px-10"
-        data-aos="fade-up" data-aos-delay="150"
+      <div
         id="core"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className="absolute bottom-30 md:bottom-50 left-1/2 transform -translate-x-1/2
+                   w-full px-4 sm:px-6 md:px-10
+                   flex flex-col justify-center items-center"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 2xl:gap-0 text-center text-white w-full">
+        {/* Container with max-width for responsiveness */}
+        <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10 text-center text-white">
           {/* Mission */}
           <div className="px-2 sm:px-4">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Mission</h3>

@@ -24,11 +24,14 @@ export default function ManagementTeam() {
      className="bg-sky-100 py-12 px-6"
      data-aos="fade-up"
      data-aos-delay="200"
+     id="man"
     >
       {/* Title */}
-      <h2 className="text-3xl ml-15 font-bold text-cyan-700 mb-10">
-        Management <br /> Team
+      <div className="mx-auto max-w-[1200px]">
+        <h2 className="text-3xl ml-15 font-bold text-cyan-700 mb-10">
+          Management Team
       </h2>
+      </div>
 
       {/* Layout */}
       <div className="flex flex-col items-center gap-12">

@@ -30,6 +30,8 @@ export default function Footer() {
             <li><HashLink smooth to="/services#gssa" className="hover:underline">GSSA/GSA</HashLink></li>
             <li><HashLink smooth to="/services#csa" className="hover:underline">CSA</HashLink></li>
             <li><HashLink smooth to="/services#cargo" className="hover:underline">Cargo Charter</HashLink></li>
+            <li><HashLink smooth to="/services#lam" className="hover:underline">Land Air Mode</HashLink></li>
+            <li><HashLink smooth to="/services#rvg" className="hover:underline">Redoc Via Getway</HashLink></li>
             <li><HashLink smooth to="/services#special" className="hover:underline">Special Cargo Handling</HashLink></li>
 
           </ul>
