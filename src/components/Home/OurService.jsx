@@ -36,7 +36,7 @@ const OurService = () => {
               <div className="flex flex-col h-full p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-101 duration-300">
                 {Icon && <Icon className="w-10 h-10 text-cyan-600 mb-4" />}
                 <h2 className="text-xl sm:text-2xl font-semibold mb-2">{item.title}</h2>
-                <p className="text-gray-600 text-sm sm:text-base mt-auto">{item.subtitle}</p>
+                <p className="text-gray-600 text-sm sm:text-base">{item.subtitle}</p>
               </div>
             </HashLink>
           );

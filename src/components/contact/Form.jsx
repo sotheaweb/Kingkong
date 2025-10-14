@@ -58,7 +58,7 @@ const Form = () => {
          className='text-3xl md:text-4xl font-bold text-cyan-600 mb-4'
          data-aos="fade-up" data-aos-delay="100"
         >Contact Us</h1>
-        <p data-aos="fade-up" data-aos-delay="100">
+        <p className='text-justify' data-aos="fade-up" data-aos-delay="100">
             We are a leading freight forwarding company in Cambodia, 
             specializing in the import and export of various goods. 
             The company is well-trained and has become a renowned and 

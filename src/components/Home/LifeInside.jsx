@@ -64,7 +64,7 @@ const LifeInside = () => {
             />
           </div>
           <p
-            className="text-sm sm:text-base text-gray-700 text-center max-w-xs mt-4"
+            className="text-sm sm:text-base text-gray-700 max-w-xs mt-4 text-justify"
             data-aos="fade-up"
             data-aos-delay="150"
           >
