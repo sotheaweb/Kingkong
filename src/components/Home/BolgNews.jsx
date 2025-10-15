@@ -48,7 +48,11 @@ const BolgNews = () => {
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto mb-16 sm:px-6 mt-20 md:mt-30">
+    <div 
+     className="max-w-[1200px] mx-auto mb-16 sm:px-6 mt-20 md:mt-30"
+     data-aos="fade-up"
+     data-aos-delay="200"
+    >
       <h1 className="text-3xl sm:text-4xl font-bold text-cyan-600 mb-6 text-center md:text-left">
         Blog & News
       </h1>

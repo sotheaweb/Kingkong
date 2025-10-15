@@ -52,7 +52,11 @@ const SubBlog = () => {
     <div className="max-w-[1200px] mx-auto px-4 sm:px-6 mt-10 mb-20">
       {/* Hero Container */}
       {hero && (
-        <div className="mb-12 transition-all duration-500 ease-in-out">
+        <div 
+         className="mb-12 transition-all duration-500 ease-in-out"
+         data-aos="fade-up"
+         data-aos-delay="300"
+        >
           <img src={hero.image} alt={hero.title} className="w-full h-[400px] object-cover rounded-lg shadow-md" />
           <h1 className="text-3xl font-bold mt-6 text-cyan-600">{hero.title}</h1>
           <p className="text-gray-700 mt-4 leading-relaxed">{hero.discription}</p>
@@ -60,8 +64,18 @@ const SubBlog = () => {
       )}
 
       {/* Other Cards */}
-      <h2 className="text-2xl font-semibold text-cyan-600 mb-6">More News</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h2 
+       className="text-2xl font-semibold text-cyan-600 mb-6"
+       data-aos="fade-up"
+       data-aos-delay="200"
+      >
+        More News
+      </h2>
+      <div 
+       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+       data-aos="fade-up"
+       data-aos-delay="200"
+      >
         {otherNews.map(item => (
           <div
             key={item.id}

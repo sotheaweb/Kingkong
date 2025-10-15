@@ -13,7 +13,11 @@ const OurService = () => {
   ];
 
   return (
-    <div className="mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    <div 
+     className="mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-[1200px]"
+     data-aos="fade-up"
+     data-aos-delay="200"
+    >
       <h1 className="text-3xl sm:text-4xl font-bold text-cyan-600 text-center sm:text-left mb-8">
         Our Services
       </h1>
