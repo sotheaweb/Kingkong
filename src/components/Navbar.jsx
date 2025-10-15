@@ -82,7 +82,7 @@ export default function Navbar() {
               <li><HashLink smooth to="/services#rvg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Redoc Via Gateway</HashLink></li>
               <li className="relative group/submenu">
                 <div className="flex items-center justify-between px-4 py-2 hover:bg-cyan-600 hover:text-white cursor-pointer">
-                  <span>Special Cargo Handling</span>
+                  <span><HashLink smooth to="/services#special">Special Cargo Handling</HashLink></span>
                   <FaAngleDown className="text-gray-600 group-hover/submenu:text-white transition" />
                 </div>
 
