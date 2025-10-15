@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import office from "../../assets/office.jpg";
+import office1 from "../../assets/office1.jpg";
 
 const branches = {
   airport: {
@@ -16,7 +17,7 @@ const branches = {
   },
   town: {
     title: "Town Office",
-    image: office,
+    image: office1,
     description: "",
     location:
       "Find our town office at the heart of Phnom Penh City located at 3rd Floor, The Helix Office, No. 107-113, 12251 Preah Monivong Blvd (93), Phnom Penh, Kingdom of Cambodia.",
@@ -99,7 +100,7 @@ export default function OfficeBranches() {
                 duration-300 
                 ${
                   selected === key
-                    ? "border-2 border-cyan-500 shadow-lg scale-[1.02]"
+                    ? "border-3 border-cyan-500 shadow-lg scale-[1.02]"
                     : "border border-transparent"
                 }
               `}
