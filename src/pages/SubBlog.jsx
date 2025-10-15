@@ -45,7 +45,7 @@ const SubBlog = () => {
   // Handle click card → setHero + scroll top
   const handleCardClick = (item) => {
     setHero(item);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth"});
   };
 
   return (
