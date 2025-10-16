@@ -37,7 +37,7 @@ const WhoWeAre = () => {
         "
         data-aos="fade-up" data-aos-delay="100"
       >
-        Who Are We?
+        Why Us?
       </h1>
 
       {/* Content Section */}
@@ -61,7 +61,7 @@ const WhoWeAre = () => {
             sm:text-base 
             md:text-lg 
             leading-relaxed 
-            text-gray-800 
+            text-gray-900 
             text-justify
             
           "

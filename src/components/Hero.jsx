@@ -5,7 +5,7 @@ export default function Hero({ title, subtitle, image, desc }) {
       <div className="grid grid-cols-1 px-0 lg:grid-cols-2 gap-8 mb-10 max-w-[1200px] mx-auto">
         {/* Title */}
         <h1
-          className=" md:text-4xl text-xl font-bold text-gray-800 sm:text-base leading-relaxed" 
+          className="md:text-4xl text-xl font-bold text-cyan-600 sm:text-base leading-relaxed lg:w-[60vw]" 
           data-aos="fade-up"
           data-aos-delay="50"
         >

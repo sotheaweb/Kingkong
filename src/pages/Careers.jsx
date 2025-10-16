@@ -23,8 +23,8 @@ const Careers = () => {
     <div>
       <Hero image={backgroundImage} title={hero.title} description={hero.description} />
       <LifeInside />
-      <Heros title={news1.title} subtitle={news1.subtitle} image={news1.image} desc={news1.desc} />
-      <Heros title={news1.title} subtitle={news1.subtitle} image={news1.image} desc={news1.desc} />
+      <Heros title={news1.title} image={news1.image} desc={news1.desc} />
+      <Heros title={news1.title} image={news1.image} desc={news1.desc} />
     </div>
   )
 }

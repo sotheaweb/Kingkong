@@ -71,7 +71,7 @@ const BolgNews = () => {
                 alt={item.title}
                 className="w-full h-[180px] md:h-[200px] object-cover rounded-lg mb-4"
               />
-              <h2 className="text-xl font-semibold mb-2 truncate">{item.title}</h2>
+              <h2 className="text-xl font-semibold mb-2 text-cyan-600 truncate">{item.title}</h2>
               <p className="text-gray-600 text-sm sm:text-base truncate">
                 {item.discription}
               </p>

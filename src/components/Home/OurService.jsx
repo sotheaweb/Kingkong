@@ -1,15 +1,21 @@
 import React from 'react';
 import { Truck } from 'lucide-react';
 import { HashLink } from 'react-router-hash-link';
+import { FaTruckPlane } from "react-icons/fa6";
+import { FaPlane } from "react-icons/fa";
+import { FaPlaneDeparture } from "react-icons/fa";
+import { FaPlaneCircleCheck } from "react-icons/fa6";
+import { FaBoxesStacked } from "react-icons/fa6";
+import { IconRefresh } from '@tabler/icons-react';
 
 const OurService = () => {
   const content = [
-    { icon: Truck, title: "CSA", id:"csa", subtitle: "On-site quality control and logistics coordination." },
-    { icon: Truck, title: "GSSA/GSA", id:"gssa", subtitle: "Represent the airline brand and drive sales locally." },
-    { icon: Truck, title: "Cargo Charter", id:"cargo", subtitle: "Flexible cargo charter solutions for urgent shipments." },
-    { icon: Truck, title: "Land Air Mode",id:"lam", subtitle: "Efficient land-air transit services." },
-    { icon: Truck, title: "Redoc Via Gateway",id:"rvg", subtitle: "Alternative routing solutions via gateway." },
-    { icon: Truck, title: "Special Cargo Handling",id:"special", subtitle: "Certified handling of dangerous and sensitive cargo." }
+    { icon: FaPlane, title: "CSA", id:"csa", subtitle: "On-site quality control and logistics coordination." },
+    { icon: FaPlaneDeparture, title: "GSSA/GSA", id:"gssa", subtitle: "Represent the airline brand and drive sales locally." },
+    { icon: FaPlaneCircleCheck, title: "Cargo Charter", id:"cargo", subtitle: "Flexible cargo charter solutions for urgent shipments." },
+    { icon: FaTruckPlane, title: "Land Air Mode",id:"lam", subtitle: "Efficient land-air transit services." },
+    { icon: IconRefresh, title: "Redoc Via Gateway",id:"rvg", subtitle: "Alternative routing solutions via gateway." },
+    { icon: FaBoxesStacked, title: "Special Cargo Handling",id:"special", subtitle: "Certified handling of dangerous and sensitive cargo." }
   ];
 
   return (
@@ -39,7 +45,7 @@ const OurService = () => {
             >
               <div className="flex flex-col h-full p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-101 duration-300">
                 {Icon && <Icon className="w-10 h-10 text-cyan-600 mb-4" />}
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2">{item.title}</h2>
+                <h2 className="text-xl sm:text-2xl text-cyan-600 font-semibold mb-2">{item.title}</h2>
                 <p className="text-gray-600 text-sm sm:text-base">{item.subtitle}</p>
               </div>
             </HashLink>

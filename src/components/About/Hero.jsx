@@ -23,9 +23,6 @@ const Hero = ({ image, title, description }) => {
         <h1 className="text-xl w-[100%] font-bold mb-4 text-gray-100 md:text-4xl md:leading-snug md:w-[70vw] lg:w-[40vw]">
           {title}
         </h1>
-        <p className="text-gray-50 w-[100%] md:w-[70vw] md:text-lg lg:w-[30vw] lg:text-xl lg:ml-40">
-          {description}
-        </p>
       </div>
     </section>
   )

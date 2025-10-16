@@ -25,10 +25,10 @@ const GeneralManager = () => {
         <div className="flex gap-10 flex-col md:flex-row w-full" data-aos="fade-up" data-aos-delay="150">
           <div className="flex flex-col gap-10">
             {/* Message Paragraph */}
-            <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-800 text-center md:text-left max-w-full md:max-w-xl">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-200 text-center md:text-left max-w-full md:max-w-xl">
               General Manager's Message
             </h2>
-            <p className="text-gray-800 text-justify max-w-full md:max-w-3xl">
+            <p className="text-gray-200 text-justify max-w-full md:max-w-3xl">
               Dear Valued Customers and business partners, I'm incredibly excited to officially introduce
               Kingkong Aviation, a new venture that launched originally in Cambodia. We're blending our global
               experience with a fresh, independent focus here in Cambodia. Our commitments are dedicated to
@@ -36,7 +36,7 @@ const GeneralManager = () => {
               Thank you for your continued support and trust. I'm confident we will achieve great things together.
             </p>
 
-            <p className="text-gray-800 max-w-full md:max-w-3xl text-left">
+            <p className="text-gray-200 max-w-full md:max-w-3xl text-left">
               Sincerely,<br /> Mrs. Chanrynet YONG
             </p>
           </div>

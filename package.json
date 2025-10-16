@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-google-maps/api": "^2.20.7",
+    "@tabler/icons-react": "^3.35.0",
     "@tailwindcss/vite": "^4.1.13",
     "aos": "^2.3.4",
     "lucide-react": "^0.542.0",

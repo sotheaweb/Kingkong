@@ -38,7 +38,7 @@ export default function Navbar() {
     }
     return location.pathname === path
       ? "text-gray-200 border-b-2 border-white"
-      : "text-gray-900 hover:text-gray-100 transition duration-300 delay-70";
+      : "text-gray-200 hover:text-gray-100 transition duration-300 delay-70";
   };
 
   return (
@@ -70,7 +70,7 @@ export default function Navbar() {
               <Link to="/services" className={linkClass("/services")}>
                 SERVICES
               </Link>
-              <FaAngleDown className="text-gray-800" />
+              <FaAngleDown className="text-gray-100" />
             </div>
 
             {/* Dropdown Menu */}

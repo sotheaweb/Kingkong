@@ -7,14 +7,14 @@ const Hero = () => {
      data-aos="fade-up" data-aos-delay="100"
     >
         <h1 
-         className='md:w-[30%] text-3xl md:text-4xl text-start font-bold text-gray-800 mb-4 mx-5 lg:mx-1'
+         className='md:w-[30%] text-3xl md:text-4xl text-start font-bold text-gray-200 mb-4 mx-5 lg:mx-1'
          data-aos="fade-up" data-aos-delay="150"
         >
             Our Services-
             Together, we offer you global service.
         </h1>
         <p 
-         className='md:w-[30%] text-gray-800 text-sm lg:text-md mt-10 md:mt-20 text-justify'
+         className='md:w-[30%] text-gray-200 text-sm lg:text-md mt-10 md:mt-20 text-justify'
          data-aos="fade-up" data-aos-delay="150"
         > 
             “Ship on Board” is a shipping term that means a 

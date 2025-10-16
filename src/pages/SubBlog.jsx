@@ -83,7 +83,7 @@ const SubBlog = () => {
             className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:scale-105 cursor-pointer"
           >
             <img src={item.image} alt={item.title} className="w-full h-[200px] object-cover rounded-lg mb-4" />
-            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <h3 className="text-xl font-semibold text-cyan-700">{item.title}</h3>
             <p className="text-gray-600 text-sm mt-2 truncate">{item.discription}</p>
           </div>
         ))}

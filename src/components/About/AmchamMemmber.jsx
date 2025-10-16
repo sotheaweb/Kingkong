@@ -83,10 +83,10 @@ const AmchamMemmber = () => {
             sm:text-3xl 
             lg:text-4xl 
             font-bold 
-            text-gray-800
+            text-gray-200
           "
         >
-          “ AmCham Member ”
+          Who Are We
         </h1>
         <p
           className="
@@ -94,7 +94,7 @@ const AmchamMemmber = () => {
             sm:text-base 
             md:text-lg 
             leading-relaxed 
-            text-gray-900
+            text-gray-200
             text-justify
           "
         >

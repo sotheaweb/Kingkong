@@ -1,20 +1,22 @@
-import manager from "../../assets/manager.png";
+import chanrynet from "../../assets/chanrynet.jpg"
+import narak from "../../assets/narak.jpg"
+import catty from "../../assets/catty.jpg"
 
 export default function ManagementTeam() {
   const team = [
     {
-      image: manager,
-      name: "Mrs. Yong Channynet",
+      image: chanrynet,
+      name: "Mrs. Channynet",
       role: `General Manager, more than 12 years of experience in Air Cargo Industry (Forwarder, Air Cargo, GSA, CSA)`,
     },
     {
-      image: manager,
-      name: "Mr. Eng Audom",
+      image: narak,
+      name: "Mr. Narak",
       role: "Operation Manager, more than 10 years experience in Air Operation Cargo Industry",
     },
     {
-      image: manager,
-      name: "Mrs. You Chansocheata",
+      image: catty,
+      name: "Mrs. Catty",
       role: "Sales Manager, about 10 years experience in Sales Cargo Industry",
     },
   ];
