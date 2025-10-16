@@ -8,17 +8,24 @@ export default function CoreSection() {
       className="relative w-full h-[65vh] sm:h-[65vh] md:h-[600px] lg:h-[70vh] xl:h-[75vh] 2xl:h-[80vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
+      <div 
+       className="absolute bottom-0 w-full h-[60vh] sm:h-[40vh] md:h-[30vh] lg:h-[50vh] bg-cyan-700 opacity-80"
+       data-aos="fade-up"
+       data-aos-delay="150"
+      >
+
+      </div>
       {/* Semi-Circle Overlay */}
       <div
         id="core"
         data-aos="fade-up"
         data-aos-delay="150"
-        className="absolute bottom-30 md:bottom-50 left-1/2 transform -translate-x-1/2
+        className="absolute bottom-30 md:bottom-35 left-1/2 transform -translate-x-1/2
                    w-full px-4 sm:px-6 md:px-10
                    flex flex-col justify-center items-center"
       >
         {/* Container with max-width for responsiveness */}
-        <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10 text-center text-white">
+        <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10 text-center text-gray-100">
           {/* Mission */}
           <div className="px-2 sm:px-4">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Mission</h3>

@@ -59,9 +59,9 @@ export default function Footer() {
           </p>
           <h3 className="font-semibold text-lg mt-4 mb-2">Contact Us</h3>
           <p className="text-sm">
-            <a href={`mailto:charnynet@pnh.kingkong-gp.co`}>charnynet@pnh.kingkong-gp.co</a>
+            <a href={`mailto:kingkongavs@pnh.kingkong-gp.com`}>kingkongavs@pnh.kingkong-gp.com</a>
           </p>
-          <p className="text-sm">+855 81 777 444</p>
+          <p className="text-sm">+855 67 777 444</p>
 
           {/* Social Media Icons */}
           <div className="flex gap-4 mt-4 text-xl">  

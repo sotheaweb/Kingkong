@@ -13,7 +13,7 @@ const Hero = ({ image, title, description }) => {
       data-aos="fade-up" data-aos-delay="300"
     >
       {/* Overlay background only */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/45"></div>
 
       {/* Content */}
       <div 
