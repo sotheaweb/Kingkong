@@ -11,7 +11,7 @@ export default function ServiceSection({ id, title, desc, img }) {
         <div className="w-full flex flex-col items-center gap-6">
           <div className="w-full md:flex justify-between">
             <h2 className="text-2xl font-bold text-cyan-600 mb-5 md:w-[30%]">{title}</h2>
-            <p className="text-gray-700 md:w-[60%] text-justify">{desc}</p>
+            <p className="text-gray-900 md:w-[60%] text-justify">{desc}</p>
           </div>
           <div className="w-full md:w-2/2">
             <img

@@ -2,8 +2,8 @@ import React, {useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import Hero from '../components/About/Hero'
 import backgroundImage from '../assets/about-hero-bg.jpg';
+import WhyUs from '../components/About/WhyUs';
 import WhoWeAre from '../components/About/WhoWeAre';
-import AmchamMemmber from '../components/About/AmchamMemmber';
 import OurOffice from '../components/About/OurOffice';
 import ManageTeam from '../components/About/ManagementTeam';
 import CoreSection from '../components/About/CoreSection';
@@ -29,8 +29,8 @@ const About = () => {
   return (
     <div>
       <Hero image={backgroundImage} title={title} description={description} />
+      <WhyUs />
       <WhoWeAre />
-      <AmchamMemmber />
       <OurOffice />
       <ManageTeam />
       <GeneralManager />

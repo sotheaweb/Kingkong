@@ -18,8 +18,9 @@ const AboutUsSection = ({ image }) => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          We don't just move cargo; we craft the best solutions designed 
-          specifically for your business. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, delectus adipisci. Earum obcaecati in vitae voluptas aspernatur. Vitae, nulla eaque ratione minima adipisci aliquam aperiam sit, ipsam rem distinctio nisi!
+          KingKong supporting your business with Aviations. <br />
+          We don't just move cargo; we craft the best solutions 
+          designed specifically for your business.
         </p>
         <a
           href="/about"

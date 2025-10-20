@@ -19,25 +19,34 @@ const Related = () => {
       id: 2,
       image: news2,
       title: "Top Cargo Awards from Cathay Cargo",
-      discription: "We are a leading freight forwarding company in Cambodia.",
+      discription: `KingKong Aviation Cambodia has been great honored to achieve the "Top Cargo Agent Award 
+                    2024" from Cathay CargoThis prestigious award recognizes the outstanding performance in 
+                    of cargo with Cathay Cargo Cambodia​. `,
     },
     {
       id: 3,
       image: news3,
       title: "Outstanding Award from Eva Air",
-      discription: "We are a leading freight forwarding company in Cambodia.",
+      discription: `KingKong Aviation Cambodia has been great honored to receive the "Outstanding Award 2024" 
+                    from EVA Air CargoThis prestigious award recognizes the outstanding performance in 
+                    2024 of KingKong aviation Cambodia  for movement of cargo with Eva Cargo Cambodia​.`,
     },
     {
       id: 4,
       image: news4,
       title: "Charity",
-      discription: "We are a leading freight forwarding company in Cambodia.",
+      discription: `On 14th February 2025, KingKong Aviation Cambodia, the company and together with our 
+                    staffs has bring sharing our donation to the Cambodia Kantha Bopha Foundation in the aim 
+                    contribution support Saving children lives and health, and a part of social responsibility 
+                    in CambodiaHappy Valentine’s Day ❤️Sharing our love with our children ❤️`,
     },
     {
       id: 5,
       image: news5,
       title: "Site visiting new cargo office at KTI",
-      discription: "We are a leading freight forwarding company in Cambodia.",
+      discription: `15 Aug 2025- Today, we are thrilled to be visiting our new King Kong Cargo Office and Cargo 
+                    Terminal at Techo International Airport.This space marks an exciting new chapter for our company, 
+                    and signals growth in the aviation industry in Cambodia`,
     },
     {
       id: 6,

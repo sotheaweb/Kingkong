@@ -80,7 +80,7 @@ const Form = () => {
         </p> 
 
         <form 
-            className="bg-white p-6 rounded-2xl shadow-md w-full max-w-sm space-y-6"
+            className="bg-white p-6 rounded-2xl shadow-md w-full max-w-sm space-y-6 mt-10"
             onSubmit={handlSubmit}
         >
             <div className="relative">

@@ -1,10 +1,12 @@
 import React from 'react'
-import about1 from '../../assets/about1.jpg'
+import amcham from '../../assets/about2.jpg'
 
 const WhoWeAre = () => {
   return (
     <div
-      id="who"
+      id="amch"
+      data-aos="fade-up"
+      data-aos-delay="100"
       className="
         w-full 
         max-w-[95%] 
@@ -17,109 +19,99 @@ const WhoWeAre = () => {
         sm:my-14 
         md:my-16 
         lg:my-20 
+        bg-cyan-600 
+        rounded-2xl 
         p-4 
         sm:p-6 
         md:p-10 
-        rounded-2xl 
+        flex 
+        flex-col 
+        md:flex-row 
+        items-center 
+        justify-between 
+        gap-8 
+        shadow-xl
       "
     >
-      {/* Title */}
-      <h1
+      {/* Left Image */}
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
         className="
-          text-2xl 
-          sm:text-3xl 
-          md:text-4xl 
-          lg:text-5xl 
-          font-bold 
-          text-cyan-600 
+          w-full 
+          md:w-[48%] 
+          rounded-xl 
+          overflow-hidden 
+          shadow-lg
+        "
+      >
+        <img
+          src={amcham}
+          alt="AmCham Member"
+          className="
+            w-full 
+            h-[250px] 
+            sm:h-[300px] 
+            md:h-[350px] 
+            lg:h-[400px] 
+            xl:h-[450px] 
+            object-cover 
+            rounded-xl 
+            transition-transform 
+            duration-300 
+            hover:scale-105
+          "
+        />
+      </div>
+
+      {/* Right Text */}
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="
+          text-white 
+          md:w-[48%] 
+          space-y-4 
+          md:space-y-6 
           text-center 
           md:text-left
         "
-        data-aos="fade-up" data-aos-delay="100"
       >
-        Why Us?
-      </h1>
-
-      {/* Content Section */}
-      <div
-        className="
-          mt-8 
-          grid 
-          grid-cols-1 
-          md:grid-cols-2
-          gap-8 
-          md:gap-12 
-          lg:gap-20 
-          items-center
-        "
-        data-aos="fade-up" data-aos-delay="150"
-      >
-        {/* Left Text */}
+        <h1
+          className="
+            text-2xl 
+            sm:text-3xl 
+            lg:text-4xl 
+            font-bold 
+            text-gray-200
+          "
+        >
+          Who Are We
+        </h1>
         <p
           className="
             text-sm 
             sm:text-base 
             md:text-lg 
             leading-relaxed 
-            text-gray-900 
+            text-gray-200
             text-justify
-            
           "
-          data-aos="fade-up" data-aos-delay="200"
         >
-          Kingkong Aviation Cambodia is a specialist, professional, and
-          expertise-driven aviation service provider. Our team, consisting of
-          seasoned professionals in Operations and Sales, brings more than a
-          decade of hands-on experience and a deep understanding of standard
-          operating procedures (SOPs) for handling air exports. Our vision is
-          to be the best aviation service provider and integrator in the
-          region, and we achieve this through our unwavering commitment to
-          being passionate, professional, and innovative in everything we do.
-          This approach ensures we always deliver maximum benefits to our
-          customers. Our comprehensive suite of services includes acting as a
-          CSA (Cargo Sales Agent) and GSA (General Sales Agent), providing
-          special handling for complex cargo like live animals (AVI), dangerous
-          goods (DG), and perishables (PER), and offering efficient land-air
-          mode solutions via key hubs like Bangkok and Ho Chi Minh City. We
-          also provide streamlined re-documentation (REDOC) services through
-          Singapore, making us a one-stop solution for all your air freight
-          needs.
+          As the first outstanding aviation company in Cambodia under the
+          globally connected brand from Taiwan, we brought a fresh and
+          innovative approach to the market. Kingkong Aviation operates as an
+          independent and specialized entity within Cambodia, with two local
+          branches to serve our customers. Since our inception, we have been
+          committed to providing exceptional aviation services, leveraging our
+          strategic partnerships and the extensive global network of our parent
+          brand. This foundation allows us to offer reliable and high-quality
+          services, quickly earning us a reputation for excellence in the air
+          freight industry.
         </p>
-
-        {/* Right Image */}
-        <div
-          className="
-            flex 
-            justify-center 
-            items-center 
-            shadow-2xl 
-            rounded-xl 
-            overflow-hidden 
-            h-[250px] 
-            sm:h-[300px] 
-            md:h-[400px] 
-            lg:h-[450px] 
-            xl:h-[500px]
-          "
-          data-aos="fade-up" data-aos-delay="300"
-        >
-          <img
-            src={about1}
-            alt="About us"
-            className="
-              w-full 
-              h-full 
-              object-cover 
-              rounded-xl 
-              transition-transform 
-              duration-300 
-              hover:scale-105
-            "
-          />
-        </div>
       </div>
     </div>
   )
 }
 
-export default WhoWeAre
+export default WhoWeAre;

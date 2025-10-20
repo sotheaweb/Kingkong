@@ -17,10 +17,10 @@ const Hero = ({ image, title, description }) => {
 
       {/* Content */}
       <div 
-        className="relative w-full mx-auto flex flex-col px-5 pt-25 md:mt-50 h-[200px] items-center lg:grid lg:grid-cols-2 lg:justify-between lg:px-20"
+        className="relative w-full mx-auto flex flex-col px-5 mt-10 h-[200px] items-center lg:grid lg:grid-cols-2 lg:justify-between lg:px-20"
         data-aos="fade-up" data-aos-delay="100"
       >
-        <h1 className="text-xl w-[100%] font-bold mb-4 text-gray-100 md:text-4xl md:leading-snug md:w-[70vw] lg:w-[40vw]">
+        <h1 className="text-xl w-full font-bold mb-4 md:-ml-30 lg:ml-0 text-gray-100 md:text-4xl md:leading-snug md:w-[60vw] lg:w-[50vw]">
           {title}
         </h1>
       </div>
