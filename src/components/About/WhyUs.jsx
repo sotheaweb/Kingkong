@@ -55,7 +55,7 @@ const WhoWeAre = () => {
             text-gray-200
           "
         >
-          Who Are We
+          Why Us
         </h1>
         <p
           className="

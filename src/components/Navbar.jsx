@@ -47,7 +47,7 @@ export default function Navbar() {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="w-[100vw] bg-cyan-600 mx-auto flex items-center justify-between px-10 py-3">
+      <div className="w-[100vw] bg-cyan-600 mx-auto flex items-center justify-between px-6 lg:px-20 py-3">
         {/* Logo */}
         <div>
           <Link to={"/"} className="flex items-center space-x-2">
@@ -66,27 +66,30 @@ export default function Navbar() {
 
           {/* Desktop Services Dropdown with Animation */}
           <li className="relative group font-semibold" onClick={() => setOpen(false)}>
-            <div className="flex items-center gap-2 cursor-pointer">
+            <div className="flex group:hover items-center gap-2 cursor-pointer">
               <Link to="/services" className={linkClass("/services")}>
                 SERVICES
               </Link>
-              <FaAngleDown className="text-gray-100" />
+              {/* Rotate icon on hover */}
+              <FaAngleDown className="text-gray-100 transform transition-transform duration-300 group-hover:rotate-180" />
             </div>
 
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 top-full bg-white shadow-lg text-gray-800 rounded-md w-60 -ml-20 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-in-out">
+            <ul className="absolute left-0 top-full group bg-white shadow-lg text-gray-800 rounded-md w-60 -ml-20 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-in-out">
               <li><HashLink smooth to="/services#csa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">CSA</HashLink></li>
               <li><HashLink smooth to="/services#gssa" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">GSSA/GSA</HashLink></li>
               <li><HashLink smooth to="/services#cargo" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Cargo Charter</HashLink></li>
               <li><HashLink smooth to="/services#lam" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Land Air Mode</HashLink></li>
               <li><HashLink smooth to="/services#rvg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Redoc Via Gateway</HashLink></li>
+
+              {/* Submenu */}
               <li className="relative group/submenu">
                 <div className="flex items-center justify-between px-4 py-2 hover:bg-cyan-600 hover:text-white cursor-pointer">
                   <span><HashLink smooth to="/services#special">Special Cargo Handling</HashLink></span>
-                  <FaAngleDown className="text-gray-600 group-hover/submenu:text-white transition" />
+                  {/* Rotate icon on submenu hover */}
+                  <FaAngleDown className="text-gray-600 transform transition-transform duration-300 group-hover/submenu:rotate-180 group-hover/submenu:text-white" />
                 </div>
 
-                {/* Submenu */}
                 <ul className="absolute left-full -top-30 bg-white shadow-lg text-gray-800 rounded-md w-60 opacity-0 translate-x-[-10px] pointer-events-none group-hover/submenu:opacity-100 group-hover/submenu:translate-x-0 group-hover/submenu:pointer-events-auto transition-all duration-300 ease-in-out">
                   <li><HashLink smooth to="/services#dg" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Dangerous Goods</HashLink></li>
                   <li><HashLink smooth to="/services#per" className="block px-4 py-2 hover:bg-cyan-600 hover:text-white">Perishable Goods</HashLink></li>
@@ -103,13 +106,7 @@ export default function Navbar() {
         </ul>
 
         {/* Language + Hamburger */}
-        <div className="flex items-center space-x-4">
-          <div className="hidden lg:flex items-center space-x-2">
-            <span className="font-semibold text-gray-100">LANGUAGES</span>
-            <button className="bg-gray-300 w-6 h-6 rounded-md">
-              <img src={flag} alt="English" className="w-full h-full object-cover rounded-md" />
-            </button>
-          </div>
+        <div className="flex items-center space-x-4 lg:hidden">
           <button
             className="lg:hidden text-gray-100"
             onClick={() => setOpen(!open)}
@@ -216,12 +213,6 @@ export default function Navbar() {
             <li><Link to="/contact" className={linkClass("/contact")} onClick={() => setOpen(false)}>CONTACT US</Link></li>
           </ul>
 
-          <div className="mt-4 flex items-center space-x-2">
-            <span className="font-semibold">LANGUAGES</span>
-            <button className="bg-gray-300 w-6 h-6 rounded-md">
-              <img src={flag} alt="English" className="w-full h-full object-cover rounded-md" />
-            </button>
-          </div>
         </div>
       )}
     </nav>

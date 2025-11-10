@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from '../components/About/Hero'
 import image from '../assets/hero.png'
 import aboutImage from '../assets/about0.jpg'
 import AboutUsSection from '../components/Home/About'

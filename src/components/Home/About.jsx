@@ -14,7 +14,7 @@ const AboutUsSection = ({ image }) => {
           About Us
         </h2>
         <p
-          className="text-sm sm:text-base md:text-lg leading-relaxed text-cyan-600 mb-6 text-justify"
+          className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-800 mb-6 text-justify"
           data-aos="fade-up"
           data-aos-delay="100"
         >

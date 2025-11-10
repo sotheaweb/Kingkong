@@ -1,26 +1,29 @@
 import React from 'react'
 
-const Hero = ({ image, title, description }) => {
+const Hero = ({ image, title}) => {
   return (
-    <section
-      className="max-h-[800px] w-full flex items-center justify-center relative"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '65vh'
-      }}
-      data-aos="fade-up" data-aos-delay="300"
+    <section 
+     className="relative w-full flex items-center justify-center"
+     data-aos="fade-up"
+     data-aos-delay="150"
     >
-      {/* Overlay background only */}
-      <div className="absolute inset-0 bg-black/45"></div>
+      {/* Image */}
+      <img
+        src={image}
+        alt="Hero Background"
+        className="w-full h-[50vh] lg:h-[65vh] object-cover"
+      />
 
-      {/* Content */}
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20"></div>
+
+      {/* Text Content */}
       <div 
-        className="relative w-full mx-auto flex flex-col px-5 mt-10 h-[200px] items-center lg:grid lg:grid-cols-2 lg:justify-between lg:px-20"
-        data-aos="fade-up" data-aos-delay="100"
+        className="absolute -left-2 w-full  md:w-[70%] lg:w-[60%] h-full flex items-center px-10 lg:px-20"
+        data-aos="fade-up"
+        data-aos-delay="150"
       >
-        <h1 className="text-xl w-full font-bold mb-4 md:-ml-30 lg:ml-0 text-gray-100 md:text-4xl md:leading-snug md:w-[60vw] lg:w-[50vw]">
+        <h1 className="text-xl font-bold text-gray-100 md:text-4xl md:leading-snug lg:text-left">
           {title}
         </h1>
       </div>
