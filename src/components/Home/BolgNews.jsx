@@ -5,7 +5,7 @@ import news2 from "../../assets/news2.jpg";
 import news3 from "../../assets/news3.jpg";
 import news4 from "../../assets/news4.jpg";
 import news5 from "../../assets/news5.jpg";
-import news6 from "../../assets/about3.jpg";
+import news6 from "../../assets/news6.jpg";
 
 const BlogNews = () => {
 
@@ -70,7 +70,7 @@ const BlogNews = () => {
       {/* Card List */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cardData.map((item) => (
-          <Link to={`/subblog/${item.id}`} state={item}>
+          <Link to={`/news/subblog/${item.id}`} state={item}>
             <div
               key={item.id}
               className="flex flex-col h-full p-4 shadow-md hover:shadow-lg rounded-lg duration-300 hover:scale-105 transition"

@@ -5,20 +5,15 @@ import news2 from "../../assets/news2.jpg";
 import news3 from "../../assets/news3.jpg";
 import news4 from "../../assets/news4.jpg";
 import news5 from "../../assets/news5.jpg";
-import news6 from "../../assets/about2.jpg";
-import news7 from "../../assets/about3.jpg";
+import news6 from "../../assets/news6.jpg";
+import news7 from "../../assets/news7.jpg";
+import news8 from "../../assets/news8.jpg";
+import news9 from "../../assets/news9.jpg";
 
 const Related = () => {
   const limit = 70;
 
   const cardData = [
-    {
-      id: 1,
-      image: news1,
-      title: "Amcham Member",
-      discription:
-        "We are glad to inform you that Kingkong Aviation Cambodia become AMCHAM Cambodia Member since 2025",
-    },
     {
       id: 2,
       image: news2,
@@ -82,7 +77,7 @@ const Related = () => {
     },
     {
       id: 8,
-      image: news7,
+      image: news8,
       title:
         "Air Cambodia Launches New Phnom Penh–Fuzhou–Tokyo Route, Marking a Milestone in Cambodia’s Aviation Sector",
       discription: `Phnom Penh, [Date] – Air Cambodia has officially inaugurated its new international 
@@ -100,7 +95,7 @@ const Related = () => {
     },
     {
       id: 9,
-      image: news7,
+      image: news9,
       title: "KingKong Cambodia-Air Cargo Forum in Miami Florida 2024",
       discription: `KingKong Aviation Cambodia is proudly participating the Air Cargo Forum in Miami, 
                     Florida from 11-14th November 2024, a world class event under the arrangement of TIACA 
@@ -129,7 +124,7 @@ const Related = () => {
         {cardData.map((item) => (
           <Link
             key={item.id}
-            to={`/subblog/${item.id}`}
+            to={`/news/subblog/${item.id}`}
             state={item} // 👈 send data to SubBlog page
           >
             <div className="flex flex-col h-full p-4 shadow-md hover:shadow-lg rounded-lg bg-white duration-300 hover:scale-105 transition">

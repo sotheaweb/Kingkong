@@ -1,9 +1,9 @@
 import React from "react";
 
 // Assuming your images are in the src/assets folder
-import image1 from "../../assets/news6.jpg";
-import image2 from "../../assets/news7.jpg";
-import image3 from "../../assets/news8.jpg";
+import image1 from "../../assets/life1.jpg";
+import image2 from "../../assets/life2.jpg";
+import image3 from "../../assets/life3.jpg";
 
 const LifeInside = () => {
   return (
@@ -35,7 +35,7 @@ const LifeInside = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Drive The World With Passion!
+            Passionate, Professional, Innovative
           </p>
         </div>
 
@@ -68,8 +68,7 @@ const LifeInside = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            We are a leading freight forwarding company in Cambodia,
-            specializing in the import and export of various goods.
+            Best customer centric, Professional & Experienced Sales, Excellence Operation.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import amcham from '../../assets/about2.jpg'
+import amcham from '../../assets/news6.jpg'
 
 const WhoWeAre = () => {
   return (

@@ -5,8 +5,11 @@ import news2 from "../assets/news2.jpg";
 import news3 from "../assets/news3.jpg";
 import news4 from "../assets/news4.jpg";
 import news5 from "../assets/news5.jpg";
-import news6 from "../assets/about2.jpg";
-import news7 from "../assets/about3.jpg";
+import news6 from "../assets/news6.jpg";
+import news7 from "../assets/news7.jpg";
+import news8 from "../assets/news8.jpg";
+import news9 from "../assets/news9.jpg";
+
 
 const SubBlog = () => {
   const location = useLocation();
@@ -83,7 +86,7 @@ const SubBlog = () => {
     },
     {
       id: 8,
-      image: news7,
+      image: news8,
       title: "Air Cambodia Launches New Phnom Penh–Fuzhou–Tokyo Route, Marking a Milestone in Cambodia’s Aviation Sector",
       discription: `Phnom Penh, [Date] – Air Cambodia has officially inaugurated its new international 
                     route connecting Phnom Penh, Fuzhou, and Tokyo, marking a significant milestone in 
@@ -100,7 +103,7 @@ const SubBlog = () => {
     },
     {
       id: 9,
-      image: news7,
+      image: news9,
       title: "KingKong Cambodia-Air Cargo Forum in Miami Florida 2024",
       discription: `KingKong Aviation Cambodia is proudly participating the Air Cargo Forum in Miami, 
                     Florida from 11-14th November 2024, a world class event under the arrangement of TIACA 
@@ -126,7 +129,7 @@ const SubBlog = () => {
   // Update URL
   useEffect(() => {
     if (hero) {
-      navigate(`/subblog/${hero.id}`, { replace: true }); // update URL
+      navigate(`/news/subblog/${hero.id}`, { replace: true }); // update URL
     }
   }, [hero, navigate]);
 

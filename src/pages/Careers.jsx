@@ -3,7 +3,10 @@ import backgroundImage from '../assets/career-hero.jpg';
 import Hero from '../components/About/Hero'
 import LifeInside from '../components/Home/LifeInside';
 import Heros from '../components/Hero';
-import newsImage from '../assets/news-hero.jpg';
+import newsImage from '../assets/news1.jpg';
+import trip from '../assets/trip.jpg';
+import party from '../assets/party.jpg';
+import endStaff from '../assets/endStaff.jpg';
 
 const Careers = () => {
 
@@ -22,7 +25,7 @@ const Careers = () => {
           delivery best customer service and qualify informations sharing to our customers.`
   };
   const news2 = {
-    image: newsImage,
+    image: trip,
     title: `Company trip 2025`,
     desc: `A wonderful getaway with the KingKong Aviation Cambodia family in Kampot. This trip was 
           more than just relaxation; it was about building stronger teamwork, sharing laughter, 
@@ -30,12 +33,12 @@ const Careers = () => {
           beautiful views, and even greater company.Together we grow, together we soar. `
   };
   const news3 = {
-    image: newsImage,
+    image: party,
     title: `Company Spring Party 2025`,
     desc: `Spring Party during April 2025 is a big and warm gathering between all teams and have fun together. Work hard and Play harder.`
   };
   const news4 = {
-    image: newsImage,
+    image: endStaff,
     title: `Year End Staff Party 2024`,
     desc: `It was a memorable night for KingKong Aviation as the team came together to celebrate the year’s 
           achievements with joy and laughter. Everyone enjoyed gift exchanges, dinner, and recognition for 
