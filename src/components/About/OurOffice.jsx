@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import airOffice from "../../assets/airOffice.jpg"
-import townOffice from "../../assets/townOffice.jpg"
+import townOffice from "../../assets/townOffice.JPG"
 
 const branches = {
   airport: {

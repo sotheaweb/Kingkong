@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
-import contact from '../../assets/contact.jpg'
+import contact from '../../assets/contact.JPG'
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
 
