@@ -6,7 +6,7 @@ import Heros from '../components/Hero';
 import newsImage from '../assets/staff-special.jpg';
 import trip from '../assets/trip.jpg';
 import party from '../assets/party.jpg';
-import yearend from '../assets/yearend.JPG';
+import yearend from '../assets/yearend.jpg';
 
 const Careers = () => {
 

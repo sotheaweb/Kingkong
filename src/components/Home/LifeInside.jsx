@@ -1,8 +1,8 @@
 import React from "react";
 
 // Assuming your images are in the src/assets folder
-import image1 from "../../assets/life1.JPG";
-import image2 from "../../assets/life2.JPG";
+import image1 from "../../assets/life1.jpg";
+import image2 from "../../assets/life2.jpg";
 import image3 from "../../assets/life3.jpg";
 
 const LifeInside = () => {
