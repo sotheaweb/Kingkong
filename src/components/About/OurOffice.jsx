@@ -20,7 +20,7 @@ const branches = {
     image: townOffice,
     description: "",
     location:
-      "Find our town office at the heart of Phnom Penh City located at 3rd Floor, The Helix Office, No. 107-113, 12251 Preah Monivong Blvd (93), Phnom Penh, Kingdom of Cambodia.",
+      "Find our town office at the heart of Phnom Penh City located at 4th Floor, The Helix Office, No. 107-113, 12251 Preah Monivong Blvd (93), Phnom Penh, Kingdom of Cambodia.",
     contact: {
       phone: "+855 67 777 444",
       email: "kingkongavs@pnh.kingkong-gp.com",

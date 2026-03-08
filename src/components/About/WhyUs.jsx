@@ -4,7 +4,7 @@ import about1 from '../../assets/about1.jpg'
 const WhoWeAre = () => {
   return (
     <div
-      id="amch"
+      id="why"
       data-aos="fade-up"
       data-aos-delay="100"
       className="

@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../assets/logo.png'
-import manager from '../../assets/manager.png'
+import manager from '../../assets/manager.jpg'
 
 const GeneralManager = () => {
   return (

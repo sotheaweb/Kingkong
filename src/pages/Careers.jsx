@@ -3,10 +3,10 @@ import backgroundImage from '../assets/career-hero.jpg';
 import Hero from '../components/About/Hero'
 import LifeInside from '../components/Home/LifeInside';
 import Heros from '../components/Hero';
-import newsImage from '../assets/news1.jpg';
+import newsImage from '../assets/staff-special.jpg';
 import trip from '../assets/trip.jpg';
 import party from '../assets/party.jpg';
-import endStaff from '../assets/endStaff.jpg';
+import yearEnd from '../assets/year-end.jpg';
 
 const Careers = () => {
 
@@ -38,7 +38,7 @@ const Careers = () => {
     desc: `Spring Party during April 2025 is a big and warm gathering between all teams and have fun together. Work hard and Play harder.`
   };
   const news4 = {
-    image: endStaff,
+    image: yearEnd,
     title: `Year End Staff Party 2024`,
     desc: `It was a memorable night for KingKong Aviation as the team came together to celebrate the year’s 
           achievements with joy and laughter. Everyone enjoyed gift exchanges, dinner, and recognition for 

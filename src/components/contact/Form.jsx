@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
-import about from '../../assets/about0.jpg'
+import contact from '../../assets/contact.jpg'
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
 
@@ -69,7 +69,7 @@ const Form = () => {
          data-aos="fade-up" data-aos-delay="100"
         > 
             <a 
-             href={`mailto:dl@pnh.dolphin-gp.com`}
+             href={`mailto:kingkongavs@pnh.kingkong-gp.com`}
              className='flex gap-2'
             >
                 <MdOutlineMarkEmailUnread className='mt-1' /> kingkongavs@pnh.kingkong-gp.com
@@ -141,7 +141,7 @@ const Form = () => {
        className='flex justify-end items-end'
        data-aos="fade-left" data-aos-delay="100"
       >
-        <img src={about} alt="Image loading" className='w-full lg:w-100 rounded-lg'/>
+        <img src={contact} alt="Image loading" className='w-full lg:w-100 rounded-lg'/>
       </div>
     </div>
   )

@@ -27,8 +27,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-3">Our Services</h3>
           <ul className="space-y-2 text-sm">
-            <li><HashLink smooth to="/services#gssa" className="hover:underline">GSSA/GSA</HashLink></li>
             <li><HashLink smooth to="/services#csa" className="hover:underline">CSA</HashLink></li>
+            <li><HashLink smooth to="/services#gssa" className="hover:underline">GSSA/GSA</HashLink></li>
             <li><HashLink smooth to="/services#cargo" className="hover:underline">Cargo Charter</HashLink></li>
             <li><HashLink smooth to="/services#lam" className="hover:underline">Land Air Mode</HashLink></li>
             <li><HashLink smooth to="/services#rvg" className="hover:underline">Redoc Via Getway</HashLink></li>
@@ -41,8 +41,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-3">About Us</h3>
           <ul className="space-y-2 text-sm">
-            <li><HashLink smooth to="/about#who" className="hover:underline">Who are we?</HashLink></li>
-            <li><HashLink smooth to="/about#amch" className="hover:underline">Amcham Member</HashLink></li>
+            <li><HashLink smooth to="/about#why" className="hover:underline">Why Us</HashLink></li>
+            <li><HashLink smooth to="/about#who" className="hover:underline">Who are we</HashLink></li>
             <li><HashLink smooth to="/about#our" className="hover:underline">Our Office</HashLink></li>
             <li><HashLink smooth to="/about#man" className="hover:underline">Management Team</HashLink></li>
             <li><HashLink smooth to="/about#gen" className="hover:underline">General Manager</HashLink></li>
@@ -53,8 +53,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-3">Office</h3>
           <p className="text-sm">
-            3rd Floor, The Helix Office, No. 107-113, <br />
-            12251 Preah Monivong Blvd (93), <br />
+            4th Floor, The Helix Office,
+            12251 Preah Monivong Blvd (93),
             Phnom Penh, Kingdom of Cambodia
           </p>
           <h3 className="font-semibold text-lg mt-4 mb-2">Contact Us</h3>

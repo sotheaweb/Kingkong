@@ -1,10 +1,10 @@
 import React from 'react'
-import amcham from '../../assets/news6.jpg'
+import amcham from '../../assets/about2.jpg'
 
 const WhoWeAre = () => {
   return (
     <div
-      id="amch"
+      id="who"
       data-aos="fade-up"
       data-aos-delay="100"
       className="
