@@ -25,7 +25,7 @@ function App() {
   
   return (
     <div className="overflow-x-hidden">
-      <Router>
+      <Router basename="/kh">
         <ScrollToTop />
         <Navbar />
         <div>
